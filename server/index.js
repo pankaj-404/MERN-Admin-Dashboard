@@ -16,6 +16,7 @@ import Product from "./models/Product.js";
 import ProductStat from "./models/ProductStat.js";
 import Transaction from "./models/Transaction.js";
 import OverallStat from "./models/OverallStat.js";
+import AffiliateStat from "./models/AffiliateStat.js";
 import {
   dataUser,
   dataProduct,
@@ -57,6 +58,7 @@ mongoose
     // Product.insertMany(dataProduct); //inset data only once
     // ProductStat.insertMany(dataProductStat); //inset data only once
     // OverallStat.insertMany(dataOverallStat); //inset data only once
+    // AffiliateStat.insertMany(dataAffiliateStat); //inset data only once
   })
   .catch((err) =>
     console.log(`Error: ${err}.
