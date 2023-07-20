@@ -15,11 +15,14 @@ import User from "./models/User.js";
 import Product from "./models/Product.js";
 import ProductStat from "./models/ProductStat.js";
 import Transaction from "./models/Transaction.js";
+import OverallStat from "./models/OverallStat.js";
 import {
   dataUser,
   dataProduct,
   dataProductStat,
   dataTransaction,
+  dataAffiliateStat,
+  dataOverallStat,
 } from "./data/index.js";
 
 //Configurations
@@ -53,7 +56,7 @@ mongoose
     // User.insertMany(dataUser); //inset data only once
     // Product.insertMany(dataProduct); //inset data only once
     // ProductStat.insertMany(dataProductStat); //inset data only once
-    // Transaction.insertMany(dataTransaction); //inset data only once
+    // OverallStat.insertMany(dataOverallStat); //inset data only once
   })
   .catch((err) =>
     console.log(`Error: ${err}.
