@@ -15,6 +15,7 @@ import Daily from "features/daily";
 import Monthly from "features/monthly";
 import Breakdown from "features/breakdown";
 import Admin from "features/admin";
+import Performance from "features/performance";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -39,6 +40,7 @@ function App() {
               <Route path="/monthly" element={<Monthly />} />
               <Route path="/breakdown" element={<Breakdown />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="/performance" element={<Performance />} />
             </Route>
           </Routes>
         </ThemeProvider>
