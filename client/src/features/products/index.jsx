@@ -26,7 +26,7 @@ const Products = () => {
       <Header title="PRODUCTS" subtitle="See your list of products" />
       {products && !isLoading ? (
         <Box
-          mt="1rem"
+          mt="20px"
           display="grid"
           gridTemplateColumns="repeat(4, minmax(0, 1fr))"
           justifyContent="space-between"
@@ -34,10 +34,6 @@ const Products = () => {
           columnGap="1.33%"
           sx={{
             "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
-            // display: "grid",
-            // gridAutoFlow: "row",
-            // gridTemplateColumns: "repeat(5, 1fr)",
-            // gap: 1,
           }}
         >
           {products.map((product) => (
